@@ -1,0 +1,15 @@
+<input [(ngModel)]="name2" type="text"/>
+  {{name2}}
+
+  <h2>Welcome {{name}}</h2>
+  <h2 class="text-success">Code evolution</h2>
+  <h2 [class]="successClass">Code evolution</h2>
+  <h2 [class.text-danger]="hasError">Code evolution</h2>
+  <h2 [ngClass]="messageClasses">Code evolution</h2>
+  <h2 [style.color]="hasError?'red':'green'">Code evolution</h2>
+  <h2 [ngStyle]="titleStyles">Code evolution</h2>
+  <button (click)="onClick($event)"></button>
+  {{greeting}}
+  <input #myInput type="text"/>
+  <button (click)="logMessages(myInput.value)"></button>
+  
